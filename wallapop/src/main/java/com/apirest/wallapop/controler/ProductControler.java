@@ -18,8 +18,8 @@ public class ProductControler {
 	
 	private List<Producto> productos = new ArrayList<>(Arrays.asList(
             new Producto(1, null, null, null, null, null, 0)
-            
     ));
+    
 	@GetMapping
     public ResponseEntity<List<Producto>> getAll() {
         return ResponseEntity.ok(productos);
